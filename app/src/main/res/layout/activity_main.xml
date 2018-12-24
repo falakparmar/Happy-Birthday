@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+< RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/hbdaycrop"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        tools:layout_editor_absoluteX="0dp" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/sideb"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/wish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Happy Birthday!God Bless You!!"
+        android:fontFamily="sans-serif-cond"
+        android:textColor="#000000"
+        android:padding="12dp"
+        android:textSize="39sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/info"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:textColor="#FFB74D"
+    android:layout_alignParentBottom="true"
+    android:textSize="27sp"
+    android:text="For more such stuff contact 9876543210 in business days from 9:00 to 18:00."
+    android:fontFamily="sans-serif-cond"/>
+
+
+    <TextView
+        android:id="@+id/giver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="39sp"
+        android:textColor="#EEFF41"
+        android:padding="9dp"
+        android:layout_above="@+id/info"
+        android:layout_alignParentRight="true"
+        android:text="From-Falak:)"
+        android:fontFamily="sans-serif-cond"/>
+
+
+</RelativeLayout>
